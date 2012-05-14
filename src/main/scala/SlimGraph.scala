@@ -285,6 +285,8 @@ package SlimGraph {
 
     def hasEdge(u: N, v: N): Boolean
 
+    def hasVertex(u: N): Boolean = { adjList.contains(u) }
+
     def edgeOption(u: N, v: N): Option[E]
 
   }
