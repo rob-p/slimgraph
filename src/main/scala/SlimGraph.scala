@@ -233,6 +233,11 @@ package SlimGraph {
       }
     }
 
+    def removeEdge(u: N, v: N) = {
+      val eo = edgeOption(u,v)
+      if ( eo.isDefined ) { removeEdge( eo.get ) } else { false }
+    }
+
     def removeEdge(e: E) = {
       if (edgeSet.contains(e)) {
         edgeSet -= e
