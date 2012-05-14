@@ -598,6 +598,7 @@ class UnionFind[X]{
       tris
     }
 
+    /*
     def trianglesByEdgeParallel[N <% Ordered[N], E <: SimpleEdgeLike[N]](
       graph: SlimGraphUnDirected[N,E],
       f: ((E, E, E)) => Boolean = (t: (E, E, E)) => true,
@@ -666,7 +667,7 @@ class UnionFind[X]{
       while( numEdgesCounted < graph.edges.size ) {
         Thread.sleep(1000)
       }
-
+  
       //val futureList = Future.traverse( graph.edges )( e => Future{ trianglesForEdge(e) } )
       //val futureList = Future.fold( futures )( ArrayBuffer.empty[(E,E,E)] )( _ ++ _ )
       //Await.result(futureList, Duration.Inf)
@@ -702,7 +703,7 @@ class UnionFind[X]{
       tris
       */
     }
-
+    */
 
     def fastTriangles[N <% Ordered[N], E <: SimpleEdgeLike[N]](
       graph: SlimGraphUnDirected[N, E],
