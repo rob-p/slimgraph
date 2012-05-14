@@ -233,7 +233,7 @@ package SlimGraph {
       }
     }
 
-    def removeEdge(u: N, v: N) = {
+    def removeEdge(u: N, v: N): Boolean = {
       val eo = edgeOption(u,v)
       if ( eo.isDefined ) { removeEdge( eo.get ) } else { false }
     }
